@@ -1,0 +1,46 @@
+<!-- <nav mat-tab-nav-bar [backgroundColor]="'red'">
+  <a mat-tab-link *ngFor="let link of links"
+     (click)="activeLink = link"
+     [active]="activeLink == link"> {{link}} </a>
+  <a mat-tab-link disabled>Disabled Link</a>
+</nav> -->
+
+<h2>Ejemplo con rutas</h2>
+<div style="margin:'50px'">
+  <nav mat-tab-nav-bar [backgroundColor]="'red'">
+    <a mat-tab-link  (click)="acomp1()"> componente1</a>
+    <a mat-tab-link  (click)="acomp2()"> componente2</a>
+    <a mat-tab-link  (click)="acomp3()"> componente3</a>
+  </nav>
+  
+  
+  
+  <p>V ROUTER OUTLET V</p>
+  <router-outlet></router-outlet>
+  
+  
+  <br><br>
+  <hr>
+  <br><br>
+  
+  
+  
+  <h2>Ejemplo con tags</h2>
+  
+  <mat-tab-group>
+    <mat-tab label="First">
+       <app-componente1 variable="20"></app-componente1>
+    </mat-tab>
+    <mat-tab label="Second">
+      <app-componente2 variable="20"></app-componente2>
+    </mat-tab>
+    <mat-tab label="Third">
+      <app-componente3 variable="20"></app-componente3>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+
+
+
+
